@@ -433,6 +433,10 @@ class FrenchCompanies(Frame):
             pass
 
         """Site NINJA"""
+        """recours à la fonction find_element_by_css_selector :
+            . Sélectionner la ligne html affectée à l'élément html souhaité
+            . Clique droit : Copy -> Copy selector
+            . Coller dans la fonction find_element_by_css_selector()"""
         try:
             ninja = webdriver.Chrome(executable_path='chromedriver.exe')
             ninja.get('https://societe.ninja/')
