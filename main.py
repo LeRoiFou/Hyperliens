@@ -20,11 +20,16 @@ récupérer le fichier du site
 sauvegarde de la clé, compte tenu de la faible importance de la sauvegarde des données, se fait par sérialisation avec
 le module pickle
 
-
+ATTENTION !
+Le module tkinter.tix n'est pas reconnu lors de la conversion du fichier python en exécutable. Le répertoire tix8.4.3
+qui se trouve dans le chemin suivant désigné ci-après a été copié dans le répertoire exe.win32-3.9 qui se trouve dans
+le répertoire build pour l'exécutable du fichier
 
 Éditeur : Laurent REYNAUD
-Date : 27-01-2021
+Date : 05-03-2021
 """
+
+# Chemin concerné pour tkinter.tix -> C:\Users\LRCOM\AppData\Local\Programs\Python\Python39-32\tcl
 
 from tkinter import messagebox, ttk
 from tkinter.tix import *  # pour les infos-bulles
